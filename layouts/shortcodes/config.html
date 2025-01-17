@@ -1,0 +1,9 @@
+{{/*--- * {{< config key=".Site.baseURL" >}}  * --*/}}
+
+
+ {{ .Get ".Site.baseURL" }} ++
+ {{ .Get ".title" }} ++
+
+ {{  .Params }}
+
+ {{ printf "%s" (.Get (.Get "key")) }} ++++

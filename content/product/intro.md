@@ -1,25 +1,88 @@
 +++
-title = "About"
-description = "Hugo, the world's fastest framework for building websites"
+title = "桌面虚拟化服务商"
+description = "一种低成本桌面虚拟化系统及运行方法"
 date = "2019-02-28"
-aliases = ["about-us", "about-hugo", "contact"]
+aliases = ["product-intro", "introduce", "product"]
 author = "Hugo Authors"
+#site =.Site.baseUrl 
 +++
 
-Written in Go, Hugo is an open source static site generator available under the [Apache Licence 2.0.](https://github.com/gohugoio/hugo/blob/master/LICENSE) Hugo supports TOML, YAML and JSON data file types, Markdown and HTML content files and uses shortcodes to add rich content. Other notable features are taxonomies, multilingual mode, image processing, custom output formats, HTML/CSS/JS minification and support for Sass SCSS workflows.
 
-Hugo makes use of a variety of open source projects including:
 
-* https://github.com/yuin/goldmark
-* https://github.com/alecthomas/chroma
-* https://github.com/muesli/smartcrop
-* https://github.com/spf13/cobra
-* https://github.com/spf13/viper
+### 1. 需求分析（针对多用户电脑环境）
+<div>&nbsp;</div>
 
-Hugo is ideal for blogs, corporate websites, creative portfolios, online magazines, single page applications or even a website with thousands of pages.
+- 高性能的需求
+- 经济成本的考量
+- 简便的管理与维护
+   
+   在性能需求上，希望电脑的能力越强越好，然而在实际使用过程中，使用率通常不足10%。虽然瞬时需求可达到100%，但其他时候则极低。如果将单台电脑的性能进行提升，并允许多人同时使用，便能实现用户体验的提升，电脑利用率的增加以及成本的降低。这一逻辑基于分时复用的原则。
 
-Hugo is for people who want to hand code their own website without worrying about setting up complicated runtimes, dependencies and databases.
+### 2. 现有解决方案概览
 
-Websites built with Hugo are extremely fast, secure and can be deployed anywhere including, AWS, GitHub Pages, Heroku, Netlify and any other hosting provider.
+1. 传统模式：一名用户配备一台电脑，这种模式被大多数企业广泛采用。
+2. 破解 Windows 远程桌面：此方案允许多人共享一台 Windows 主机，但同一操作系统的资源分配受限，管理便利性不及虚拟化方案，应用场景也相对稀少，例如 Aster。
+3. VDI 架构（桌面虚拟化主流架构）：客户系统运行于服务器之上，通过终端实施远程桌面。
+   - 资源能够按需分配，管理也比较方便。
+   - 由于使用的是远程桌面，因此流畅度不如本地运行。
+   - 整体成本较高，同时维护费用也不低。 <br>该虚拟化方案包括 KVM、Hyper-V、VMware 和 Citrix，主要应用于对数据安全性以及管理便利性需求较高的客户，如学校智能教室、银行及大型企业，通常需要资金投入较大。
+4. IDV 架构：此方案使用虚拟化技术，计算和显示处理都在一个胖终端上，这使得成本较高且资源利用率较低。
+5. 网吧类无盘系统：此系统从服务器加载，计算和显示处理同样在一个胖终端上，成本偏高且资源利用率低。
 
-Learn more and contribute on [GitHub](https://github.com/gohugoio).
+
+现有方案面临的问题：
+
+- 传统模式在管理上不够灵活，资源不能进行动态调度，资源利用率较低。
+- VDI模式成本较高，使用流畅度不及本地显示。
+
+### 3. 本方案介绍
+
+为解决上述两种模式存在的问题，本方案在客户机的显示上增加了本地显示的选项。
+
+- 解决了 VDI 模式的流畅度问题。
+- 由于无需终端进行远程显示，降低了成本，同时减少了主机的资源消耗（VDI 模式需要进行桌面编码、传输、解码和显示，耗费大量资源）。
+- 利用虚拟化技术进行资源按需分配和动态调度，提高资源利用率，降低成本，并便于管理。
+
+优势：
+
+- 成本低于传统模式，资源利用率优于传统模式。
+- 实现资源的按需分配、负载均衡，便于管理。
+- 使用流畅度优于 VDI 架构（远程桌面）。
+
+存在的问题：
+
+- NVIDIA 显卡虚拟化软件的授权费用较高。
+- 英特尔仅有集成显卡和服务器显卡支持虚拟化，而消费级独立显卡不支持。
+- AMD 支持的显卡有限，仅有少数几款。
+
+### 4. 演示框图
+
+![](/elkmi/images/virt.png)
+
+**演示框图说明**：
+
+- 虚拟化：PC1 和 PC2 是普通电脑主机。PC1 可以同时运行多种操作系统，例如 Windows 7、10、11。优势在于管理方便且资源能够动态调度。
+- 本地显示：一台电脑可连接多个显卡，每个显卡可支持多个显示接口，可以接入多个显示器，各个用户显示不同内容。
+- 网络显示：终端设备通过网络进行远程显示，一个终端也可以连接多个显示器，供多个用户同时使用。
+- 交换机：用于连接主机，以扩大系统规模。
+- 热迁移：用户运行的操作系统可以在主机之间热迁移，实现主机负载均衡。
+- 外部设备：电脑可连接多个 USB 外设，供多个用户使用。
+- DP Hub：DP MST 可以将一个 DP 接口分成三个。普通 DP 线的长度约为 2 米，使用 DP 光纤线可达到约 50 米，价格约为 600 元。
+- GPU 虚拟化：虚拟机需要显卡，以提升视频和 3D 图形加速体验。
+- 显示终端：仅支持远程显示，不支持本地计算。终端类型包括：
+  - 低价 ARM 终端：仅支持一个显示，使用体验一般，价格约 200 元。
+  - 高性能 x86 终端：可支持三个显示（如果有 DB 接口，还可接入更多显示器），使用体验较好，价格约 1000 元。
+
+
+### 5. 负载均衡
+
+
+1. 单主机：
+
+   - 资源按需分配：如按批次分配 CPU、内存、磁盘等资源。资源的预分配发生在客户操作系统启动之前。
+   - 资源动态分配：根据客户机器的资源利用率动态调整 CPU、内存、磁盘等资源，此项调整发生在客户操作系统运行期间。
+
+2. 多主机：
+
+   - 根据客户机资源利用率及桌面刷新率动态迁移虚拟机。
+   - 单主机在部分时间段内资源利用率较高时，多主机负载均衡可以降低单主机的负载压力。

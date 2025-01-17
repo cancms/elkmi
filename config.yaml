@@ -8,6 +8,13 @@ googleAnalytics: ""
 
 summaryLength: 20
 
+
+markup:
+  defaultMarkdownHandler: goldmark
+  goldmark:
+    renderer:
+      unsafe: true
+
 params:
   title: "Up Business"
   description: "We specialize in providing services to desing websites, applications, build and maintain business for customers."
@@ -61,7 +68,7 @@ menus:
 
   buttons:
     - name: "联系微信客服"
-      url: "/#"
+      url: "/contact"
       weight: 5
       pre: "btn btn-primary text-light"
 
