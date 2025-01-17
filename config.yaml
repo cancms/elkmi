@@ -2,7 +2,7 @@ baseURL: "https://cancms.github.io/elkmi/"
 theme: "up-business-theme"
 languageCode: "en-us"
 
-title: "Up Business"
+title: "Elk Mi"
 
 googleAnalytics: ""
 
@@ -39,28 +39,28 @@ params:
 
 menus:
   main:
-    - name: "Home"
+    - name: "首页"
       url: "/#hero"
       weight: 1
 
-    - name: "How we work"
-      url: "/#"
+    - name: "产品介绍"
+      url: "/product/intro"
       weight: 2
 
-    - name: "Our team"
+    - name: "常见问题"
       url: "/#"
       weight: 3
 
-    - name: "Pricing"
+    - name: "手册下载"
       url: "/#"
       weight: 4
 
-    - name: "Blog"
-      url: "/blog"
-      weight: 5
+#    - name: "Blog"
+#      url: "/blog"
+#      weight: 5
 
   buttons:
-    - name: "Book a call"
+    - name: "联系微信客服"
       url: "/#"
       weight: 5
       pre: "btn btn-primary text-light"
