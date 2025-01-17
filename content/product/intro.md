@@ -57,7 +57,7 @@ author = "Hugo Authors"
 
 ### 4. 演示框图
 
-![](/elkmi/images/virt.png)
+![](/elkmi/images/virt2.png)
 
 **演示框图说明**：
 
