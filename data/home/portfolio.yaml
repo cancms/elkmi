@@ -2,38 +2,41 @@ enabled: true
 id: "portfolio"
 
 content:
-  - image: "images/portfolio-ecommerce.png"
-    pretitle: "Portfolio Service"
-    title: "We developed an eCommerce website"
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sed euismod quis sit gravida pharetra sit. Cursus vel enim pretium vulputate semper sem elit magna neque. Aliquet adipisc."
+  - image: "images/finance.png"
+    pretitle: "如何均衡"
+    title: "降本增效"
+    text: "解决了 VDI 模式的流畅度问题；由于无需终端进行远程显示，降低了成本，同时减少了主机的资源消耗（VDI 模式需要进行桌面编码、传输、解码和显示，耗费大量资源）；利用虚拟化技术进行资源按需分配和动态调度，提高资源利用率，降低成本，并便于管理。"
+
+#    buttons:
+#      - label: "See live"
+#        url: "#"
+#
+#      - label: "Read more"
+#        url: "#"
+
+
+  - image: "images/virt2.png"
+    pretitle: "演示框图"
+    title: "桌面虚拟系统及运行方法"
+    text: "虚拟化， 可以同时运行多种操作系统，管理方便且资源能够动态调度；本地显示/网络显示，多显卡、多显示接口、多显示器、多用户同时使用；DP Hub，GPU 虚拟化"
+
+    buttons:
+#      - label: "See live"
+#        url: "#"
+
+      - label: "详细信息"
+        url: "product/intro"
+
+
+
+  - image: "images/finance.png"
+    pretitle: "方案介绍"
+    title: "负载均衡"
+    text: "单主机：资源按需分配：如按批次分配 CPU、内存、磁盘等资源。资源的预分配发生在客户操作系统启动之前。多主机：根据客户机资源利用率及桌面刷新率动态迁移虚拟机"
 
     buttons: 
-      - label: "See live"
-        url: "#"
+#      - label: "See live"
+#        url: "#"
 
-      - label: "Read more"
-        url: "#"
-
-  - image: "images/portfolio-ecommerce.png"
-    pretitle: "Portfolio Service"
-    title: "We developed an eCommerce website"
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sed euismod quis sit gravida pharetra sit. Cursus vel enim pretium vulputate semper sem elit magna neque. Aliquet adipisc."
-
-    buttons: 
-      - label: "See live"
-        url: "#"
-
-      - label: "Read more"
-        url: "#"
-
-  - image: "images/portfolio-ecommerce.png"
-    pretitle: "Portfolio Service"
-    title: "We developed an eCommerce website"
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sed euismod quis sit gravida pharetra sit. Cursus vel enim pretium vulputate semper sem elit magna neque. Aliquet adipisc."
-
-    buttons: 
-      - label: "See live"
-        url: "#"
-
-      - label: "Read more"
-        url: "#"
+      - label: "详细信息"
+        url: "product/intro"

@@ -2,25 +2,19 @@ enabled: true
 id: "testimonials"
 
 content:
-  title: "Testimonials"
+  title: "优点"
 
   featured:
     image: "images/testimonials-awards.png"
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consectetur et pretium nunc, quis euismod et. Volutpat suspendisse sed in blandit condimentum. Sagittis nullam nec mauris, feugiat hendrerit aliquam cras. Dolor tortor gravida lobortis in ultricies enim vulputate non. Neque nibh donec quam lectus."
-    client: "Anonymous Customer"
+    text: "将单台电脑的性能进行提升，并允许多人同时使用，便能实现用户体验的提升，电脑利用率的增加以及成本的降低。"
+    client: "对多用户电脑环境"
 
   list:
-    - text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consectetur et pretium nunc, quis euismod et. Volutpat suspendisse sed in blandit condimentum. Sagittis nullam nec mauris, feugiat hendrerit aliquam cras. Dolor tortor gravida lobortis in ultricies enim vulputate non. Neque nibh donec quam lectus."
-      client: "Anonymous Customer"
+    - text: "满足高性能的需求"
+      client: ""
 
-    - text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consectetur et pretium nunc, quis euismod et. Volutpat suspendisse sed in blandit condimentum. Sagittis nullam nec mauris, feugiat hendrerit aliquam cras. Dolor tortor gravida lobortis in ultricies enim vulputate non. Neque nibh donec quam lectus."
-      client: "Anonymous Customer"
+    - text: "降低经济成本"
+      client: ""
 
-    - text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consectetur et pretium nunc, quis euismod et. Volutpat suspendisse sed in blandit condimentum. Sagittis nullam nec mauris, feugiat hendrerit aliquam cras. Dolor tortor gravida lobortis in ultricies enim vulputate non. Neque nibh donec quam lectus."
-      client: "Anonymous Customer"
-
-    - text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consectetur et pretium nunc, quis euismod et. Volutpat suspendisse sed in blandit condimentum. Sagittis nullam nec mauris, feugiat hendrerit aliquam cras. Dolor tortor gravida lobortis in ultricies enim vulputate non. Neque nibh donec quam lectus."
-      client: "Anonymous Customer"
-
-    - text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consectetur et pretium nunc, quis euismod et. Volutpat suspendisse sed in blandit condimentum. Sagittis nullam nec mauris, feugiat hendrerit aliquam cras. Dolor tortor gravida lobortis in ultricies enim vulputate non. Neque nibh donec quam lectus."
-      client: "Anonymous Customer"
+    - text: "简便的管理与维护"
+      client: ""

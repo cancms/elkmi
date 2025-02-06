@@ -7,3 +7,13 @@
  {{  .Params }}
 
  {{ printf "%s" (.Get (.Get "key")) }} ++++
+
+
+
+
+<div>{{ absURL "articles" }} </div>
+
+
+{{ $image := resources.Get "images/virt2.png" }}
+<img src="{{ $image.RelPermalink }}" width="{{ $image.Width }}" height="{{ $image.Height }}">
+

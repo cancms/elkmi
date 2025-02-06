@@ -2,14 +2,14 @@ enabled: true
 id: "hero"
 
 content:
-  title: "How to **level up** your business"
-  text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Est faucibus tellus leo non pellentesque lorem vel. Arcu magna eros, potenti duis."
+  title: "**低成本**桌面虚拟系统及运行方法"
+  text: "本方案在客户机的显示上增加了本地显示的选项，成本低于传统模式，资源利用率优于传统模式。实现资源的按需分配、负载均衡，便于管理。使用流畅度优于 VDI 架构（远程桌面）。"
 
   buttonPrimary:
-    label: "How we work"
-    url: "#"
+    label: "产品介绍"
+    url: "product/intro"
 
   buttonSecondary:
-    label: "Let's talk"
-    url: ""
+    label: "联系我们"
+    url: "contact"
 
