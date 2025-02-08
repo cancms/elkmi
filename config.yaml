@@ -2,7 +2,7 @@ baseURL: "https://cancms.github.io/elkmi/"
 theme: "up-business-theme"
 languageCode: "en-us"
 
-title: "Elk Mi"
+title: "桌面虚拟化服务商"
 
 googleAnalytics: ""
 
@@ -42,7 +42,7 @@ params:
     - "trungkienspktnd@gamail.com"
     - "207.555.0119"
 
-  copyright: "© 2025 Elk Mi 版权所有"
+#  copyright: "© 2025 Elk Mi 版权所有"
 
 menus:
   main:
@@ -50,9 +50,9 @@ menus:
       url: "/#hero"
       weight: 1
 
-    - name: "产品介绍"
-      url: "/product/intro"
-      weight: 2
+#    - name: "产品介绍"
+#      url: "/product/intro"
+#      weight: 2
 
     - name: "常见问题"
       url: "/#"

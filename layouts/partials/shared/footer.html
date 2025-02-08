@@ -3,6 +3,18 @@
 
     <div class="row">
       <div class="col-12">
+        <div class="small text-black-61 text-center">
+          <img src="{{ (resources.Get "images/logo.png").Permalink }}" class="footer-logo1 " />
+          成都香巴拉科技有限责任公司  备案号 xxx
+        </div>
+
+        {{/*<div class="small text-black-61 text-center">
+          <img src="{{ "logo.png" | relLangURL }}" />
+          <img src="{{ (resources.Get "images/logo.png").Permalink }}" />
+        </div>*/}}
+
+      </div>
+      <div class="col-12">
         {{ with .Site.Params.copyright }}
           <p class="small text-black-61 text-center">{{ . }}</p>
         {{ end }}
@@ -10,3 +22,5 @@
     </div>
   </div>
 </footer>
+
+

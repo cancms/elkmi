@@ -34,10 +34,11 @@
                 <p class="card-text text-black-61">"{{ $e.text }}" <span class="fw-bold text-primary text-nowrap">- {{ $e.client }}</span></p>
               </div>
             {{ else }}
-              <div class="card-body">
+              <div class="card-body testimonial-points1">
                 {{ $colors := (slice "bg-green" "bg-yellow" "bg-red" "bg-purple") }}
-                <div class="{{ index $colors (mod $i 4) }} rounded-circle size-90 mb-4"></div>
-                <p class="card-text text-black-61">"{{ $e.text }}" <span class="fw-bold text-primary text-nowrap">- {{ $e.client }}</span></p>
+                <div class="{{ index $colors (mod $i 4) }} rounded-circle size-90 me-4"></div>
+                <div class="card-text text-black-61">"{{ $e.text }}" <span class="fw-bold text-primary text-nowrap">{{ $e.client }}</span></div>
+                {{/*<p class="card-text text-black-61">"{{ $e.text }}" <span class="fw-bold text-primary text-nowrap">- {{ $e.client }}</span></p>*/}}
               </div>
             {{ end }}
           </div>

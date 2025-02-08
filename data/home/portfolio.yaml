@@ -24,8 +24,8 @@ content:
 #      - label: "See live"
 #        url: "#"
 
-      - label: "详细信息"
-        url: "product/intro"
+#      - label: "详细信息"
+#        url: "product/intro"
 
 
 
@@ -38,5 +38,5 @@ content:
 #      - label: "See live"
 #        url: "#"
 
-      - label: "详细信息"
-        url: "product/intro"
+#      - label: "详细信息"
+#        url: "product/intro"
