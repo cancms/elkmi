@@ -1,20 +1,11 @@
 <section class="section portfolio">
   <div class="container">
     {{ range .content }}
-    <div class="row portfolio-feature">
+    <div class="row portfolio-feature text-black-61">
       <div class="col-12 col-xl-6 d-flex flex-column justify-content-center">
         {{ with .image }}
           {{ partial "utilities/image-fluid.html" . }}
         {{ end }}
-          {{ with .column_pretitle }}
-              <p class="text-danger fw-semibold mb-2">{{ . }}</p>
-          {{ end }}
-          {{ with .column_title }}
-              <h3 class="fs-1 fw-bold text-primary pb-3">{{ . }}</h3>
-          {{ end }}
-          {{ with .column_text }}
-              <p class="text-black-61 pb-3">{{ . | safeHTML }}</p>
-          {{ end }}
       </div>
       <div class="col-12 col-xl-6 d-flex flex-column justify-content-center">
         {{ with .pretitle }}
@@ -24,7 +15,7 @@
           <h3 class="fs-1 fw-bold text-primary pb-3">{{ . }}</h3>
         {{ end }}
         {{ with .text }}
-          <p class="text-black-61 pb-3">{{ . | safeHTML }}</p>
+          <p class=" pb-3">{{ . | safeHTML }}</p>
         {{ end }}
         <div class="">
           {{ range .buttons }}
