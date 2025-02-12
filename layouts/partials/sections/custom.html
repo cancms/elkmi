@@ -3,7 +3,7 @@
     {{ range .content }}
     <div class="row portfolio-feature text-black-61">
       <div class="col-12 col-xl-6 d-flex flex-column justify-content-top">
-          <div style="padding: 0 4rem;">
+          <div class="custom-req-pad">
               {{ with .image }}
                   {{ partial "utilities/image-fluid.html" . }}
               {{ end }}
