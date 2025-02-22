@@ -1,0 +1,17 @@
+{{ define "main" }}
+  <section class="section pb-5">
+
+    {{ partial "sections/g_hero.html" . }}
+
+    <div class="container">
+      <div class="row ">
+        {{ with .Site.Data.home.custom }}{{ partial "sections/custom.html" . }}{{ end }}
+      </div>
+
+    </div>
+
+    {{ partial "sections/g_showcase.html" . }}
+    {{ partial "sections/g_contact.html" . }}
+
+  </section>
+{{ end }}

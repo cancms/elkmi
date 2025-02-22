@@ -54,13 +54,13 @@ menus:
 #      url: "/product/intro"
 #      weight: 2
 
-    - name: "常见问题"
-      url: "/#"
-      weight: 3
-
-    - name: "手册下载"
-      url: "/#"
-      weight: 4
+#    - name: "常见问题"
+#      url: "/#"
+#      weight: 3
+#
+#    - name: "手册下载"
+#      url: "/#"
+#      weight: 4
 
 #    - name: "Blog"
 #      url: "/blog"

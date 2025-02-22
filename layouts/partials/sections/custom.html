@@ -1,41 +1,192 @@
-<section class="section portfolio">
-  <div class="container">
-    {{ range .content }}
-    <div class="row portfolio-feature text-black-61">
-      <div class="col-12 col-xl-6 d-flex flex-column justify-content-top">
-          <div class="custom-req-pad">
-              {{ with .image }}
-                  {{ partial "utilities/image-fluid.html" . }}
-              {{ end }}
-              {{ with .column_pretitle }}
-                  <p class="text-danger fw-semibold mb-2">{{ . }}</p>
-              {{ end }}
-              {{ with .column_title }}
-                  <h3 class="fs-1 fw-bold text-primary pb-3">{{ . }}</h3>
-              {{ end }}
-              {{ with .column_text }}
-                  <p class="text-black-61 pb-3">{{ . | safeHTML }}</p>
-              {{ end }}
-          </div>
-
-      </div>
-      <div class="col-12 col-xl-6 d-flex flex-column justify-content-top">
-        {{ with .pretitle }}
-          <p class="text-danger fw-semibold mb-2">{{ . }}</p>
-        {{ end }}
-        {{ with .title }}
-          <h3 class="fs-1 fw-bold text-primary pb-3">{{ . }}</h3>
-        {{ end }}
-        {{ with .text }}
-          <p class="text-black-61 pb-3">{{ . | safeHTML }}</p>
-        {{ end }}
-        <div class="">
-          {{ range .buttons }}
-            <a class="text-decoration-none me-3" href="{{ .url | relLangURL }}">{{ .label }}</a>
-          {{ end }}
+<div class="other-parts g-home-custom">
+    <div class="xuqiu-wrap row ot-row">
+        <div class="col-12 col-xl-4 d-flex flex-column justify-content-center">
+            <img class="g-ot-img" src="{{ relLangURL "images/gamma/xuqiu.png" }}" />
         </div>
-      </div>
+        <div class="col-12 col-xl-8 d-flex flex-column justify-content-center">
+            <div class="h-section-title ">
+                计算机需求
+            </div>
+            <div class="d-flex flex-wrap">
+
+
+                <div class="d-flex xq-item-wrap ">
+                    <div class=" d-flex flex-column  xq-num-wrap">
+                        <div class=" d-flex  justify-content-center num">1</div>
+                    </div>
+                    <div class="num-content">
+                        <div class="n-title ">性能优越</div>
+                        <div class="n-content">追求强大的计算能力，满足各种工作需求。</div>
+                    </div>
+                </div>
+
+                <div class="d-flex xq-item-wrap ">
+                    <div class=" d-flex flex-column  xq-num-wrap">
+                        <div class=" d-flex  justify-content-center num">2</div>
+                    </div>
+                    <div class="num-content">
+                        <div class="n-title ">经济实惠</div>
+                        <div class="n-content">降低总体拥有成本，提高投资回报率。 </div>
+                    </div>
+                </div>
+
+                <div class="d-flex xq-item-wrap ">
+                    <div class=" d-flex flex-column  xq-num-wrap">
+                        <div class=" d-flex  justify-content-center num">3</div>
+                    </div>
+                    <div class="num-content">
+                        <div class="n-title ">易于管理</div>
+                        <div class="n-content">简化IT管理流程，提高运维效率。</div>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
     </div>
-    {{ end }}
-  </div>
-</section>
+
+    <div class=" row ot2-row limit-section">
+
+        <div class="h-section-title ">
+            传统模式的局限性
+        </div>
+
+        <div class="col-12 col-xl-4  ">
+            <div class="num-content">
+                <div class="n-title ">资源利用率低</div>
+                <div class="n-content">单台电脑使用率通常不足10%，造成资源浪费。</div>
+            </div>
+        </div>
+
+        <div class="col-12 col-xl-4  ">
+            <div class="num-content">
+                <div class="n-title ">成本高昂</div>
+                <div class="n-content">每位用户配备独立主机，增加了硬件和维护成本。</div>
+            </div>
+        </div>
+
+        <div class="col-12 col-xl-4  ">
+            <div class="num-content">
+                <div class="n-title ">管理困难</div>
+                <div class="n-content">分散的硬件设备增加了IT管理的复杂性。</div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <div class=" row ot2-row vdi-section">
+
+        <div class="h-section-title ">
+            传统桌面虚拟的优劣性（VDI）
+        </div>
+
+        <div class="col-12 col-xl-4  ">
+            <div class="num-content">
+                <div class="n-title ">优点</div>
+                <div class="n-content">资源可按需分配，管理简便。适用于对数据安全性与管理便利性要求高的场景。</div>
+            </div>
+        </div>
+
+        <div class="col-12 col-xl-4  ">
+            <div class="num-content">
+                <div class="n-title ">缺点</div>
+                <div class="n-content">使用体验不如本地操作流畅，总体成本较高。</div>
+            </div>
+        </div>
+
+        <div class="col-12 col-xl-4  ">
+            <div class="num-content">
+                <div class="n-title ">适用场景</div>
+                <div class="n-content">智慧教室、银行、大型企业等资金需求量较大的客户。</div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <div class=" row ot2-row solution-section">
+
+        <div class="h-section-title ">
+            我们的解决方案
+        </div>
+
+        <div class="col-12 col-xl-4  d-flex flex-column justify-content-center ">
+            <div class="num-content a-right">
+                <div class="n-title ">虚拟化</div>
+                <div class="n-content">电脑主机同时运行多个操作系统，实现资源动态调度。</div>
+            </div>
+            <div class="num-content a-right">
+                <div class="n-title ">热迁移</div>
+                <div class="n-content">用户系统可在主机间灵活迁移，实现负载均衡。</div>
+            </div>
+        </div>
+
+        <div class="col-12 col-xl-4   d-flex flex-column justify-content-center  ">
+            <div class="num-content">
+                <img class="" style="width: 100%;" src="{{ relLangURL "images/gamma/chart1.png" }}" />
+            </div>
+        </div>
+
+
+
+
+
+
+
+        <div class="col-12 col-xl-4   d-flex flex-column justify-content-center  ">
+            <div class="num-content">
+                <div class="n-title ">本地显示</div>
+                <div class="n-content">一台电脑连接多个显卡和显示器，显示不同内容。</div>
+            </div>
+            <div class="num-content">
+                <div class="n-title ">网络显示</div>
+                <div class="n-content">终端通过网络实现远程显示，支持多用户同时使用。</div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+    <div class=" row ot2-row vdi-section">
+
+        <div class="h-section-title ">
+            方案优势
+        </div>
+
+        <div class="col-12 col-xl-6  ">
+            <div class="num-content">
+                <div class="n-title ">成本效益</div>
+                <div class="n-content">企业IT支出降低50%</div>
+            </div>
+        </div>
+
+        <div class="col-12 col-xl-6  ">
+            <div class="num-content">
+                <div class="n-title ">资源利用</div>
+                <div class="n-content">显著提高资源利用率</div>
+            </div>
+        </div>
+
+        <div class="col-12 col-xl-6  ">
+            <div class="num-content">
+                <div class="n-title ">管理便利</div>
+                <div class="n-content">资源按需分配，易于维护</div>
+            </div>
+        </div>
+
+        <div class="col-12 col-xl-6  ">
+            <div class="num-content">
+                <div class="n-title ">使用体验</div>
+                <div class="n-content">流畅度高于VDI架构</div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+</div>
